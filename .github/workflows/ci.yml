@@ -1,0 +1,20 @@
+name: CI Test
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - feature/**
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # ❌ Intentional error here
+      - name: Install dependencies
+        run: pip install -r requierements.txt
