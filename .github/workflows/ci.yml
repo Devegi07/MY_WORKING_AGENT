@@ -17,4 +17,4 @@ jobs:
 
       # ❌ Intentional error here
       - name: Install dependencies
-        run: pip install -r requierements.txt
+        run: pip install -r requirements.txt,
